@@ -2,9 +2,11 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import "./Search.css";
 import { useState } from "react";
+
+
 export default function Search({ updateWeather }) {
-  let API_URL = "https://api.openweathermap.org/data/2.5/weather";
-  let API_KEY = "6246ee98826c357f95b7ddc34674f2aa";
+  let API_URL = process.env.API_URL;
+  let API_KEY = process.env.API_KEY
   let [city, setCity] = useState("");
   let [error, setError] = useState(false);
   let [isLoading, setIsLoading] = useState(false);
