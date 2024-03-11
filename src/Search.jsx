@@ -52,7 +52,7 @@ export default function Search({ updateWeather }) {
   };
   return (
     <div className="searchLogic">
-      <h3>Search for the Weather!</h3>
+      <h3 style={{fontFamily : 'sans-serif'}}>Search for the Weather!</h3>
       <form onSubmit={handleSumbit}>
         <TextField
           id="city"
